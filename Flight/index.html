@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyTravel - Book Your Flight</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Decorative planes -->
+    <div class="plane-1">✈</div>
+    <div class="plane-2">✈️</div>
+    <div class="plane-3">🛫</div>
+    
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-plane-departure"></i>
+                <span>Project</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-search"></i> Find Flights</a></li>
+                    <li><a href="#"><i class="fas fa-percent"></i> Deals</a></li>
+                    <li><a href="#"><i class="fas fa-phone"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover the World with SkyTravel</h1>
+                <p>Find the best flight deals to your dream destinations. Book now and get up to 40% off on your next adventure!</p>
+                <div class="benefits">
+                    <div class="benefit-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Safe Travel</h3>
+                        <p>Your safety is our top priority with enhanced cleaning and contactless procedures.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-tags"></i>
+                        <h3>Best Prices</h3>
+                        <p>We guarantee the lowest prices on all flights with our price match policy.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-headset"></i>
+                        <h3>24/7 Support</h3>
+                        <p>Our dedicated support team is available around the clock to assist you.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="booking-form">
+                <h2 class="form-title">BOOK YOUR FLIGHT</h2>
+                <form id="flightForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="from"><i class="fas fa-plane-departure"></i> Flying From</label>
+                            <select class="form-control" id="from" required>
+                                <option value="">Select departure city</option>
+                                <option value="new-york">New York (JFK)</option>
+                                <option value="london">London (LHR)</option>
+                                <option value="paris">Paris (CDG)</option>
+                                <option value="tokyo">Tokyo (HND)</option>
+                                <option value="dubai">Dubai (DXB)</option>
+                                <option value="sydney">Sydney (SYD)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="to"><i class="fas fa-plane-arrival"></i> Flying To</label>
+                            <select class="form-control" id="to" required>
+                                <option value="">Select destination city</option>
+                                <option value="new-york">New York (JFK)</option>
+                                <option value="london">London (LHR)</option>
+                                <option value="paris">Paris (CDG)</option>
+                                <option value="tokyo">Tokyo (HND)</option>
+                                <option value="dubai">Dubai (DXB)</option>
+                                <option value="sydney">Sydney (SYD)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="departure"><i class="far fa-calendar-alt"></i> Departure Date</label>
+                            <input type="date" class="form-control" id="departure" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="return"><i class="fas fa-calendar-week"></i> Return Date</label>
+                            <input type="date" class="form-control" id="return">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="travelers"><i class="fas fa-users"></i> Travelers</label>
+                            <select class="form-control" id="travelers">
+                                <option value="1">1 Traveler</option>
+                                <option value="2" selected>2 Travelers</option>
+                                <option value="3">3 Travelers</option>
+                                <option value="4">4 Travelers</option>
+                                <option value="5">5 Travelers</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="class"><i class="fas fa-chair"></i> Class</label>
+                            <select class="form-control" id="class">
+                                <option value="economy">Economy</option>
+                                <option value="premium">Premium Economy</option>
+                                <option value="business">Business</option>
+                                <option value="first">First Class</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn">
+                        <i class="fas fa-search"></i> Search Flights
+                    </button>
+                </form>
+            </div>
+        </section>
+        
+        <footer>
+            <p>© 2023 SkyTravel. All rights reserved. | Terms & Conditions | Privacy Policy</p>
+        </footer>
+    </div>
+
+   <script src="index.js"></script>
+</body>
+</html>
